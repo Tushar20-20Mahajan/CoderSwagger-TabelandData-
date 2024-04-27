@@ -13,6 +13,9 @@
 		3FD505DD2BDAD86F001A4C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD505DC2BDAD86F001A4C35 /* Assets.xcassets */; };
 		3FD505E02BDAD86F001A4C35 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3FD505DF2BDAD86F001A4C35 /* Base */; };
 		3FD505E82BDAD8F7001A4C35 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD505E72BDAD8F7001A4C35 /* CategoriesVC.swift */; };
+		3FD505ED2BDADAE9001A4C35 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD505EC2BDADAE9001A4C35 /* CategoriesCell.swift */; };
+		3FD505F32BDAE2DB001A4C35 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD505F22BDAE2DB001A4C35 /* DataService.swift */; };
+		3FD505F52BDAE332001A4C35 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD505F42BDAE332001A4C35 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		3FD505DF2BDAD86F001A4C35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FD505E12BDAD86F001A4C35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FD505E72BDAD8F7001A4C35 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
+		3FD505EC2BDADAE9001A4C35 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
+		3FD505F22BDAE2DB001A4C35 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		3FD505F42BDAE332001A4C35 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		3FD505D22BDAD86E001A4C35 /* CoderSwagger(TabelandData) */ = {
 			isa = PBXGroup;
 			children = (
+				3FD505F12BDAE2BB001A4C35 /* Services */,
+				3FD505EB2BDADA96001A4C35 /* Controller */,
+				3FD505EA2BDADA8F001A4C35 /* View */,
+				3FD505E92BDADA7F001A4C35 /* Model */,
 				3FD505D32BDAD86E001A4C35 /* AppDelegate.swift */,
 				3FD505D52BDAD86E001A4C35 /* SceneDelegate.swift */,
-				3FD505E72BDAD8F7001A4C35 /* CategoriesVC.swift */,
 				3FD505D92BDAD86E001A4C35 /* Main.storyboard */,
 				3FD505DC2BDAD86F001A4C35 /* Assets.xcassets */,
 				3FD505DE2BDAD86F001A4C35 /* LaunchScreen.storyboard */,
 				3FD505E12BDAD86F001A4C35 /* Info.plist */,
 			);
 			path = "CoderSwagger(TabelandData)";
+			sourceTree = "<group>";
+		};
+		3FD505E92BDADA7F001A4C35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FD505F42BDAE332001A4C35 /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3FD505EA2BDADA8F001A4C35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FD505EC2BDADAE9001A4C35 /* CategoriesCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3FD505EB2BDADA96001A4C35 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3FD505E72BDAD8F7001A4C35 /* CategoriesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3FD505F12BDAE2BB001A4C35 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3FD505F22BDAE2DB001A4C35 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FD505E82BDAD8F7001A4C35 /* CategoriesVC.swift in Sources */,
+				3FD505ED2BDADAE9001A4C35 /* CategoriesCell.swift in Sources */,
 				3FD505D42BDAD86E001A4C35 /* AppDelegate.swift in Sources */,
 				3FD505D62BDAD86E001A4C35 /* SceneDelegate.swift in Sources */,
+				3FD505F32BDAE2DB001A4C35 /* DataService.swift in Sources */,
+				3FD505F52BDAE332001A4C35 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
